@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block image %}
+<h3 style="font-family: Arial;color: #000000">Please wait loading......!Please maintain light....!</h3>
+<div style="display: block;
+    text-align: center;
+  margin-left: auto;
+  margin-right: auto;">
+    <img src={{ url_for('video_feed') }} width="900" height="520" alt="LIVE">
+</div>
+{% endblock %}

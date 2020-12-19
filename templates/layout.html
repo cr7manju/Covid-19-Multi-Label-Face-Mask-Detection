@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19 Face Mask Detection</title>
+    <link rel="icon" href="/static/logo.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        img {
+          border-radius: 20px;
+        }
+       .topnav {
+		  position: relative;
+		  overflow: hidden;
+		  background-color: #333;
+		}
+
+		.topnav a {
+		  float: left;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+		.topnav a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+
+		.topnav a.active {
+		  background-color: #4CAF50;
+		  color: white;
+		}
+
+		.topnav-centered a {
+		  float: none;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		}
+
+		.topnav-right {
+		  float: right;
+		}
+        .foo{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+   width: 100%;
+        }
+        .foo{
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
+        .foo ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        .foo li {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            width: 25%;
+            text-align: center;
+        }
+        .tech li{
+            float:none;
+        }
+       
+    
+    </style>
+</head>
+<body style="background-image: url({{ url_for('static', filename='background.jpeg') }});background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;opacity: 2;">
+<!-- Top navigation -->
+	<div class="topnav">
+
+	  <!-- Centered link -->
+	  <div class="topnav-centered">
+		<a href="/">COVID19 Face Mask Detection</a>
+	  </div>
+	  
+	  <!-- Left-aligned links (default) -->
+	  <a href="/" class="active">Home</a>
+	  <a href="/image">Image</a>
+	  <a href="/video">Video</a>
+	  
+	  <!-- Right-aligned links -->
+	  <div class="topnav-right">
+		<a href="/technology">Technology</a>
+	  </div>
+	  
+	</div>
+
+    {% block image %}
+    {% endblock %}
+    <div class="foo">
+        <ul>
+            <li><h3 style="font-family: Comic sans MS;">Developed by @adharsh</h3></li>
+            <li><a class="right" href="https://www.linkedin.com/in/adharsh-kumar-ala-aa2a901a9/" target="_blank"><i class="fa fa-linkedin" style="font-size:24px;color: blue;"></i></a></li>
+            <li><a class="right" href="https://github.com/AdharshAla" target="_blank"><i class="fa fa-github" style="font-size:24px;color: black;"></i></a></li>
+        </ul>
+
+    </div>
+    
+
+</body>
+</html>
