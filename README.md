@@ -21,7 +21,7 @@ This project is under preservation of copyright and license notices from MIT.
 - [Acknowledgements](#Acknowledgements)
 
 ### About The Project
-Coronavirus disease 2019 has severely affected the world. Wearing masks in public places is one significant form of safety for individuals. In addition, many public service providers encourage people to only use the service if they wear masks properly. Correct facemask-wearing is valuable in infectious disease control, but the effectiveness of facemasks has been diminished mostly due to improper wearing. This repository is used to predict whether the person is wearing a face mask appropriately to prevent COVID 19 virus. Data is being classified into No_Mask, Wrong_Mask and Mask.
+The spread of the COVID-19 pandemic has produced the world's most critical global health epidemic that has had a profound effect on society and the way we view our world and our daily lives. At the moment, WHO recommends that people should wear face masks if they have respiratory symptoms, or they are taking care of the people with symptoms. Furthermore, many public service providers require customers to use the service only if they wear masks. Therefore, face mask detection has become a crucial computer vision task to help the global society, but research related to face mask detection is limited.  This repository is used to predict whether the person is wearing a face mask appropriately to prevent COVID 19 virus. Data is being classified into No_Mask, Wrong_Mask and Mask.
 
 ### Built With
 Below are the list of key scientific libraries / tools used to accomplish this project.
@@ -42,6 +42,7 @@ Below are the list of key scientific libraries / tools used to accomplish this p
       $ mkvirtualenv FaceMaskDetection
       
 3.    Activate the above environment using "activate FaceMaskDetection"
+
 4.    Now, run the following command in Terminal/Command Prompt in the above environment to install the libraries required
       
       $ pip install -r requirements.txt
